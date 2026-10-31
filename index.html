@@ -3,197 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SrapCARTEL | Copper Scrapping Guides</title>
+    <title>SrapCARTEL :: Underground Scrapping Manuals</title>
     <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --accent-copper: #d97706;
-            --accent-hover: #b45309;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        }
-
         body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(to bottom, #090d16, var(--bg-color));
-            padding: 3rem 1rem;
-            text-align: center;
-            border-bottom: 2px solid var(--accent-copper);
-        }
-
-        header h1 {
-            font-size: 3rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--text-main);
-        }
-
-        header h1 span {
-            color: var(--accent-copper);
-        }
-
-        header p {
-            color: var(--text-muted);
-            margin-top: 0.5rem;
-            font-size: 1.2rem;
+            background-color: #000000;
+            color: #00ff00;
+            font-family: "Courier New", Courier, monospace;
+            padding: 20px;
+            margin: 0;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 3rem 1.5rem;
+            border: 3px ridge #ff0000;
+            padding: 20px;
+            background-color: #0a0a0a;
         }
 
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 2rem;
+        h1 {
+            color: #ffff00;
             text-align: center;
-            border-bottom: 1px solid #334155;
-            padding-bottom: 0.5rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px #ff0000;
         }
 
-        .guides-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+        .subtitle {
+            text-align: center;
+            color: #ff5555;
+            font-style: italic;
+            margin-bottom: 20px;
         }
 
-        .guide-card {
-            background-color: var(--card-bg);
-            border: 1px solid #334155;
-            border-radius: 8px;
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            transition: transform 0.2s, border-color 0.2s;
+        hr {
+            border: 1px dashed #ff0000;
+            margin: 20px 0;
         }
 
-        .guide-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-copper);
+        h2 {
+            color: #00ffff;
+            text-transform: uppercase;
+            border-bottom: 1px solid #00ffff;
+            padding-bottom: 5px;
         }
 
-        .guide-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--text-main);
+        .guide-box {
+            border: 1px dashed #00ff00;
+            margin: 20px 0;
+            padding: 15px;
+            background: #001100;
         }
 
-        .guide-card p {
-            color: var(--text-muted);
-            margin-bottom: 1.5rem;
+        .guide-box h3 {
+            color: #ffff00;
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+
+        .guide-box p {
+            color: #cccccc;
             font-size: 0.95rem;
         }
 
-        .guide-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-top: 1px solid #334155;
-            padding-top: 1rem;
-        }
-
         .price {
-            font-size: 1.25rem;
+            color: #ff3333;
             font-weight: bold;
-            color: var(--accent-copper);
+            font-size: 1.1rem;
         }
 
         .buy-btn {
-            background-color: var(--accent-copper);
-            color: white;
-            border: none;
-            padding: 0.6rem 1.2rem;
-            border-radius: 4px;
-            cursor: pointer;
+            background: #ffff00;
+            color: #000000;
             font-weight: bold;
+            font-family: "Courier New", Courier, monospace;
+            border: 2px outset #ffffff;
+            padding: 8px 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            transition: background-color: 0.2s;
         }
 
         .buy-btn:hover {
-            background-color: var(--accent-hover);
+            background: #ffcc00;
+        }
+
+        .buy-btn:active {
+            border-style: inset;
         }
 
         footer {
             text-align: center;
-            padding: 2rem;
-            color: var(--text-muted);
-            background-color: #090d16;
-            margin-top: 4rem;
-            border-top: 1px solid #334155;
+            color: #777777;
+            margin-top: 30px;
+            font-size: 0.85rem;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Srap<span>CARTEL</span></h1>
-        <p>The Underground Blueprint to Copper Scrapping & Yard Domination</p>
-    </header>
-
     <div class="container">
-        <h2 class="section-title">Available Scrapping Guides</h2>
+        <h1>⚠️ SrapCARTEL ⚠️</h1>
+        <div class="subtitle">The Underground Syndicate for Copper Scrapping & Scale Domination</div>
         
-        <div class="guides-grid">
-            <!-- Guide 1 -->
-            <div class="guide-card">
-                <div>
-                    <h3>#1: The Bare Bright Blueprint</h3>
-                    <p>Learn how to safely strip insulation off thick gauge wire, maximize your yield, and identify what scrap yards look for to give you top-tier pricing without getting lowballed.</p>
-                </div>
-                <div class="guide-footer">
-                    <span class="price">$19.99</span>
-                    <button class="buy-btn" onclick="alert('Checkout integration coming soon!')">Buy Guide</button>
-                </div>
-            </div>
+        <hr>
 
-            <!-- Guide 2 -->
-            <div class="guide-card">
-                <div>
-                    <h3>#2: Plumbing & Pipe Grading Masterclass</h3>
-                    <p>A complete breakdown of differentiating between #1 copper, #2 copper, brass fixtures, and coated tubing. Stop losing money by mixing your grades at the scale.</p>
-                </div>
-                <div class="guide-footer">
-                    <span class="price">$24.99</span>
-                    <button class="buy-btn" onclick="alert('Checkout integration coming soon!')">Buy Guide</button>
-                </div>
-            </div>
+        <h2>Available Manuals & Guides</h2>
 
-            <!-- Guide 3 -->
-            <div class="guide-card">
-                <div>
-                    <h3>#3: Yard Relations & Scale Secrets</h3>
-                    <p>Insider tactics on how to build relationships with local yard operators, negotiate volume bonuses, track market prices daily, and time your loads for maximum payouts.</p>
-                </div>
-                <div class="guide-footer">
-                    <span class="price">$29.99</span>
-                    <button class="buy-btn" onclick="alert('Checkout integration coming soon!')">Buy Guide</button>
-                </div>
-            </div>
+        <div class="guide-box">
+            <h3>#1: The Bare Bright Blueprint</h3>
+            <p>Learn how to safely strip insulation off thick gauge wire, maximize your yield, and identify what scrap yards look for to secure top-tier pricing without getting lowballed.</p>
+            <span class="price">Price: $19.99</span><br>
+            <a class="buy-btn" href="mailto:orders@srapcartel.com?subject=BUY:%20Bare%20Bright%20Blueprint&body=I%20want%20to%20buy%20The%20Bare%20Bright%20Blueprint.%20Send%20payment%20instructions.">Buy Guide Now</a>
         </div>
-    </div>
 
-    <footer>
-        <p>&copy; 2026 SrapCARTEL. All rights reserved. Built for the hustle.</p>
-    </footer>
+        <div class="guide-box">
+            <h3>#2: Plumbing & Pipe Grading Masterclass</h3>
+            <p>A complete breakdown of differentiating between #1 copper, #2 copper, brass fixtures, and coated tubing. Stop losing money by mixing your grades at the scale.</p>
+            <span class="price">Price: $24.99</span><br>
+            <a class="buy-btn" href="mailto:orders@srapcartel.com?subject=BUY:%20Plumbing%20Guide&body=I%20want%20to%20buy%20the%20Plumbing%20%26%20Pipe%20Grading%20Masterclass.%20Send%20payment%20instructions.">Buy Guide Now</a>
+        </div>
+
+        <div class="guide-box">
+            <h3>#3: Yard Relations & Scale Secrets</h3>
+            <p>Insider tactics on how to build relationships with local yard operators, negotiate volume bonuses, track market prices daily, and time your loads for maximum payouts.</p>
+            <span class="price">Price: $29.99</span><br>
+            <a class="buy-btn" href="mailto:orders@srapcartel.com?subject=BUY:%20Yard%20Relations%20Guide&body=I%20want%20to%20buy%20the%20Yard%20Relations%20%26%20Scale%20Secrets%20guide.%20Send%20payment%20instructions.">Buy Guide Now</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 SrapCARTEL. All rights reserved. No refunds. Strict confidentiality required.</p>
+        </footer>
+    </div>
 
 </body>
 </html>
